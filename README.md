@@ -7,7 +7,7 @@
         &nbsp;&nbsp;&nbsp;&nbsp;(1)&nbsp; Hydrate the text file to get actual tweets and other information about the tweets.</br>
         &nbsp;&nbsp;&nbsp;&nbsp;(2)&nbsp; Apply pre-processing on the data to clean the data.</br>
         &nbsp;&nbsp;&nbsp;&nbsp;(3)&nbsp; Changing the data in required format.</br>
-        &nbsp;&nbsp;&nbsp;&nbsp;To accomplish the above mentioned task use the [HydrateTweets.ipynb File](HydrateTweets.ipynb).</br>
+        &nbsp;&nbsp;&nbsp;&nbsp;To accomplish the above mentioned tasks use the [HydrateTweets.ipynb File](HydrateTweets.ipynb).</br>
         &nbsp;&nbsp;&nbsp;&nbsp;A [final_cleaned_data.csv](final_cleaned_data.csv) file will be created that contains data to be visualized.</br>
 **4**. Now we will apply some Python Data Science techniques for **Sentiment Analysis**. To accomplish following tasks</br>
         &nbsp;&nbsp;&nbsp;&nbsp;(1)&nbsp; Calculate sentiment value of each tweet.</br>

@@ -48,18 +48,10 @@ def plot_overall_sent(data_frame,file_writer):
     w_negative=(w_negative/wgt_sum)*100
     #writing into the file "the percentage of all the sentiment categories for a phase
     file_writer.writerow({'Phase_Name':phase, 'Positive(%)': positive,'Negative(%)':negative,'Weakly Negative':w_negative,"Weakly Positive":w_positive,"Strongly Negative":s_negative,"Strongly Positive":s_positive,"Neutral":neutral,"Overall_sentiment":overall_sentiment})
-    with open('plot_data_1.csv', 'a', newline='') as file1:
-        fieldnames_1 = ['created_at', 'sentiment']
-        writer_1 = csv.DictWriter(file1, fieldnames=fieldnames_1)
-        writer_1.writeheader()
-
-        for index in data_frame.index:
-            # writing the individual tweet sentiments and the timestamp of the tweet in each phase into the file
-            writer_1.writerow({"created_at": data_frame["Actual Tweet"][index]["created_at"],"sentiment": data_frame["sentiment_polarity"][index]})
-
+    
 
 #This function filters the tweet according to our relevance and finds the sentiment by textblob
-def find_sentiment(phase,writer):
+def find_sentiment(phase,writer,writer_1):
     data_frame = pd.read_csv(fr"IBM HACK CHALLENGE DATA\{phase}\final_cleaned_data.csv",engine="python")
     from ast import literal_eval
     data_frame.dropna(inplace=True)
@@ -72,14 +64,20 @@ def find_sentiment(phase,writer):
     data_frame["sentiment_subjectivity"] = data_frame.apply(lambda x:get_textblob_sentiment(x["cleaned_text"]).subjectivity, axis=1)
     #factual information is discarded by this step
     data_frame=data_frame[data_frame["sentiment_subjectivity"]>0.5]
+    for index in data_frame.index:
+        # writing the individual tweet sentiments and the timestamp of the tweet in each phase into the file
+        writer_1.writerow({"created_at": data_frame["Actual Tweet"][index]["created_at"],"sentiment": data_frame["sentiment_polarity"][index]})
     plot_overall_sent(data_frame,writer)
 #This function calls the TextBlob function to find the sentiment object
 def get_textblob_sentiment(tweetText):
     return TextBlob(tweetText).sentiment
 if __name__ == "__main__":
-    with open('plot_data.csv', 'w', newline='') as file:
+    with open('plot_data.csv', 'w', newline='') as file,open('plot_data_1.csv', 'a', newline='') as file1:
         fieldnames = ['Phase_Name', 'Positive(%)','Negative(%)',"Weakly Negative","Weakly Positive","Strongly Negative","Strongly Positive","Neutral","Overall_sentiment"]
         writer = csv.DictWriter(file, fieldnames=fieldnames)
         writer.writeheader()
+        fieldnames_1 = ['created_at', 'sentiment']
+        writer_1 = csv.DictWriter(file1, fieldnames=fieldnames_1)
+        writer_1.writeheader()
         for phase in ["BEFORE LOCKDOWN DATA","PHASE 1","PHASE 2","PHASE 3","PHASE 4","UNLOCK 2.0 LAST 4 DAYS DATA(7,8,9,10 JULY)"]:
-           find_sentiment(phase,writer)
+           find_sentiment(phase,writer,writer_1)

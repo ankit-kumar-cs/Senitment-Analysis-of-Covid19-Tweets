@@ -1,5 +1,4 @@
 # SBSPS-Challenge-254-Twitter-Sentiment-Visualization-for-Lockdown-Extension
-# SBSPS-Challenge-254-Twitter-Sentiment-Visualization-for-Lockdown-Extension
 **1**. First we need to collect the data of tweets. We have used the [Download Data Link](https://ieee-dataport.org/open-access/coronavirus-covid-19-tweets-dataset) to collect the tweets.</br>
 **2**. The downloaded data is in csv file so have to combine all csv files of a particular **phase**.</br>
         &nbsp;&nbsp;&nbsp;&nbsp;Use [This File MergeData.ipynb](MergeData.ipynb) to merge all the csv files of a particular phase in one text file.</br>

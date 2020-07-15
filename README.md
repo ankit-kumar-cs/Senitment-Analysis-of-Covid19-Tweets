@@ -15,3 +15,4 @@
         &nbsp;&nbsp;&nbsp;&nbsp;(1)&nbsp; Subdivide the sentiment into Positive,Negative,Weakly Positive,etc.</br>
         &nbsp;&nbsp;&nbsp;&nbsp;(1)&nbsp; Calculate Average Sentiment Value.</br>
         &nbsp;&nbsp;&nbsp;&nbsp;Use [sentiment_analyis.py](sentiment_analysis.py)
+**5**. After the sentiment analysis we have [plot_data.csv](plot_data.csv) which contains the data to be plotted.

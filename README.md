@@ -11,9 +11,9 @@
         &nbsp;&nbsp;&nbsp;&nbsp;A [final_cleaned_data.csv](final_cleaned_data.csv) file will be created that contains data to be analyzed.</br>
 **4**. Now we will apply some Python Data Science techniques for **Sentiment Analysis**. To accomplish following tasks</br>
         &nbsp;&nbsp;&nbsp;&nbsp;(1)&nbsp; Calculate sentiment value of each tweet.</br>
-        &nbsp;&nbsp;&nbsp;&nbsp;(1)&nbsp; Calculate weight of each tweet.</br>
-        &nbsp;&nbsp;&nbsp;&nbsp;(1)&nbsp; Subdivide the sentiment into Positive,Negative,Weakly Positive,etc.</br>
-        &nbsp;&nbsp;&nbsp;&nbsp;(1)&nbsp; Calculate Average Sentiment Value.</br>
+        &nbsp;&nbsp;&nbsp;&nbsp;(2)&nbsp; Calculate weight of each tweet.</br>
+        &nbsp;&nbsp;&nbsp;&nbsp;(3)&nbsp; Subdivide the sentiment into Positive,Negative,Weakly Positive,etc.</br>
+        &nbsp;&nbsp;&nbsp;&nbsp;(4)&nbsp; Calculate Average Sentiment Value.</br>
         &nbsp;&nbsp;&nbsp;&nbsp;Use [sentiment_analyis.py](sentiment_analysis.py)</br>
 **5**. After the sentiment analysis we have [plot_data.csv](plot_data.csv) and [plot_data_1.csv](plot_data_1.csv) which contains the data to be plotted.</br>
 **6**. Final step is to visualise the data. We have used Watson Studio with IBM Cognos Analytics for this purpose. </br>

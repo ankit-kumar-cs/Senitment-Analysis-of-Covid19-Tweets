@@ -10,9 +10,7 @@
         &nbsp;&nbsp;&nbsp;&nbsp;To accomplish the above mentioned tasks use the [HydrateTweets.ipynb File](HydrateTweets.ipynb).</br>
         &nbsp;&nbsp;&nbsp;&nbsp;A [final_cleaned_data.csv](final_cleaned_data.csv) file will be created that contains data to be analyzed.</br>
 **4**. Now we will apply some Python Data Science techniques for **Sentiment Analysis**. To accomplish following tasks</br>
-        &nbsp;&nbsp;&nbsp;&nbsp;(1)&nbsp; Calculate sentiment value of each tweet.</br>)
-        **8**. ###Project Presentation Link### </br>
-        [https://docs.google.com/presentation/d/1bq76E2imH3IxaEDFngha5Ouioz5f3n6RWw7R2Th2X8k/edit?usp=sharing](https://docs.google.com/presentation/d/1bq76E2imH3IxaEDFngha5Ouioz5f3n6RWw7R2Th2X8k/edit?usp=sharing)
+        &nbsp;&nbsp;&nbsp;&nbsp;(1)&nbsp; Calculate sentiment value of each tweet.</br>
         &nbsp;&nbsp;&nbsp;&nbsp;(1)&nbsp; Calculate weight of each tweet.</br>
         &nbsp;&nbsp;&nbsp;&nbsp;(1)&nbsp; Subdivide the sentiment into Positive,Negative,Weakly Positive,etc.</br>
         &nbsp;&nbsp;&nbsp;&nbsp;(1)&nbsp; Calculate Average Sentiment Value.</br>

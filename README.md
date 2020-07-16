@@ -19,7 +19,7 @@
 **6**. Final step is to visualise the data. We have used Watson Studio with IBM Cognos Analytics for this purpose. </br>
         &nbsp;&nbsp;&nbsp;&nbsp; Link of the dashboard [Visualisation](https://dataplatform.cloud.ibm.com/dashboards/1eae785d-7db1-4a2f-b6b2-b42ac2cce86a/view/7915f71f38b7349171e9e6e4079f2a527b347709b3bb8106d6807b490d637297a96017c0c82d1e5dde120d36fbe8135cce)
         
-**7**. ### Project Demonstration Video Link </br>
+### **7**. Project Demonstration Video Link </br>
 [https://drive.google.com/file/d/1XthX3jlfn_9JYLKwouitBnqoRLYNgg23/view?usp=sharing](https://drive.google.com/file/d/1XthX3jlfn_9JYLKwouitBnqoRLYNgg23/view?usp=sharing)</br>
-**8**. ### Project Presentation Link </br>
+### **8**. Project Presentation Link </br>
 [https://docs.google.com/presentation/d/1bq76E2imH3IxaEDFngha5Ouioz5f3n6RWw7R2Th2X8k/edit?usp=sharing](https://docs.google.com/presentation/d/1bq76E2imH3IxaEDFngha5Ouioz5f3n6RWw7R2Th2X8k/edit?usp=sharing)
